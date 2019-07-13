@@ -1,0 +1,478 @@
+
+*{
+    box-sizing: border-box;
+}
+.slider{
+    overflow-y: scroll;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 130%;
+    margin: 0 auto;
+}
+
+.cabecalho  .circle{
+    width: 26px;
+    height: 26px;
+    font-size: 100%;
+}
+.itemLista{
+    background-color: #C6D9F3;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    cursor: pointer;
+}
+.itemLista:hover{
+    background-color: rgb(164, 200, 252);
+    transition: 0.3s;
+}
+.itemCabecalho{
+    font-size:130%;
+    background-color: white;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(141, 141, 141);
+}
+.cabecalho > .itemLista{
+    background-color: white;
+}
+.cabecalho  .itemLista:hover{
+    background-color: #ECECEC;
+}
+.semp, semP{
+    padding: 0;
+}
+.semM, semm{
+    margin: 0;
+}
+.itemLista  p{
+    font-size: 70%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.itemLista h3{
+    text-align: left;
+    font-size: 150%;
+}
+.lista{
+    border: 1px solid #ccc;
+
+    height: 450px;
+}
+.listaArquivo{
+    height: 200px;
+}
+.cabecalho{
+    height:400px;
+}
+.tabelaLista{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+.tabelaLista > tbody{
+    max-height: 450px;
+}
+body{
+    background-size: cover;
+    background-color: #ECECEC;
+}
+input, select{
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+.fundoWhite{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 0 10px #ccc;
+}
+.fundoDegrade{
+    background-image: linear-gradient(to bottom right, rgba(118, 162, 227, 0.8), rgba(59, 81, 114, 0.8));
+    background-size: cover;
+
+    width: 100%;
+}
+
+.backdoc{
+    background-image: url("/img/back.jpg");
+    /* Create the parallax scrolling effect */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.btn-padrao, .btn-p{
+    background-color: white;
+    border-radius: 20px;
+    border: rgba(59, 81, 114, 1) solid 1px;
+    box-shadow:3px 3px 10px  #CCC;
+    color:rgba(118, 162, 227, 1);
+    font-size: 150%;
+    font-weight: bold;
+}
+.btn-menu, .btn-m{
+    background-color: rgba(118, 162, 227, 1);
+    border-radius: 10px;
+    border: rgba(59, 81, 114, 1) solid 1px;
+    box-shadow:3px 3px 10px  #CCC;
+    color:white;
+    font-weight: bold;
+    height:200px;
+    padding-top:40px;
+    font-size:50px;
+    line-height: 50px;
+    width: 100%;
+}
+.btn-menu2, .btn-m2{
+    padding-top:10px;
+    font-size:40px; 
+    vertical-align: middle;
+    display: table-cell;
+    line-height: 60px;
+}
+.afastamento-top-simples{
+    margin-top: 20px;
+}
+.btn-pdf{
+    width: 100%;
+    background-image: linear-gradient(90deg, #E37676, #BB0F0F);
+    border: black solid 1px;
+}
+.btn-pdf > h3{
+
+    font-size:120%;
+    color:white;
+}
+.btn-arquivo, .btn-a{
+    border-radius:10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-crud > p{
+    margin-bottom:0;
+}
+.btn-crud {
+    width:120px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.logoTitulo{
+    color:white;
+    font-size:300%;
+    font-weight: bold;
+}
+.btn-padrao:hover, .btn-p:hover{
+    background-color: rgba(118, 162, 227, 1);
+    color: white;
+}
+/*Principal*/
+.infoTwo{
+    width: 60%;
+    margin: 0 auto;
+}
+.infoThree{
+    
+    margin: 0 auto;
+    background: #707070;
+}
+
+.infoThree >  *{
+    color:white;
+    width: 60%;
+}
+.infoOne >  *{
+    color:white;
+    width: 80%;
+    margin: 0 auto;
+}
+.infoOne > div > h3{
+    font-size:300%;
+}
+.infoOne > div > p{
+    font-size:150%;
+    width:70%;
+    margin:0 auto;
+}
+.infoOne > div > .logo > h2{
+    font-size:350%;
+}
+/*Nav*/
+
+.navPadrao{
+    padding-top:10px;
+    padding-bottom:10px;
+    background:transparent;
+}
+.navPadrao-preenchido{
+    background:rgba(118, 162, 227, 1);
+}
+.navPadrao > ul > li > a{
+    color:black;
+    font-size: 1.5em;
+}
+.navPadrao > ul > li{    
+    list-style-type: none;
+    text-align: center;
+}
+.navPadrao > ul > .ativo > a{    
+    color: white;
+    font-weight: bold;
+}
+.navScroll{
+    border-bottom:rgba(118, 162, 227, 1) 2px solid;
+    background:hsla(0, 0%, 100%, 0.8);
+}
+.navScroll > ul > .ativo > a{    
+    color: rgba(118, 162, 227, 1);
+    font-weight: bold;
+}
+.label{
+    background: white;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.label > .input-90{
+    border-radius: 20px;
+}
+.check{
+    text-align: left;
+    color:white;
+    font-weight: bold;
+}
+.pesquisa{
+    background: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+.pesquisa > *{
+    float:left;
+    border:0;
+    background: transparent;
+    margin-top:5px;
+
+}
+.pesquisa > input{
+    margin-left:5%;
+    width: 75%;
+}
+.pesquisa > button{
+    width: 20%;
+    
+}
+.logo >img{
+    max-width: 30%;
+    float:left;
+}
+.logo >h1{
+    width: 70%;
+    float:left;
+}
+.aDireita{
+    text-align: right;
+}
+.centralizado{
+    text-align: center;
+    margin: 0 auto;
+}
+.justificado{
+    text-align: justify;
+}
+.subTitulo{
+    color:rgba(118, 162, 227, 1);
+    font-weight: bold;
+    font-size:300%;
+}
+.subTitulo-white{
+    color:white;
+    font-weight: bold;
+    font-size:300%;
+}
+.subSubTitulo-white{
+    color:white;
+    font-weight: bold;
+    font-size:150%;
+}
+.subSubSubTitulo{
+    color:white;
+    font-weight: initial;
+    font-size:150%;
+}
+.tx-lg{
+    font-size: 150%;
+}
+.tituloServico > h3{
+    color:rgba(118, 162, 227, 1);
+    font-weight: bold;
+    font-size:200%;
+}
+.tituloServico > P{
+    font-size:150%;
+}
+.tituloServico > img{
+    width:100px;
+}
+.bg-p{
+    background-color:rgba(118, 162, 227, 1);
+    color:white;
+}
+.inputInvisivel{
+    visibility: hidden;
+    height: 0px;
+}
+.imgArquivo{
+    border: 5px solid #ececec;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #ccc;
+    margin: 0 auto;
+}
+.boxImgArquivo{
+    background: #76a2e373;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid #007bff;
+    min-height: 100px;
+}
+.deletarImagem{
+    position: absolute;
+}
+.deletarImagemAlternativa{
+    position: absolute;
+}
+.inputarquivo{
+    position: absolute;
+    left:0;
+    visibility: hidden;
+}
+.inputarquivoAlternativa{
+    position: absolute;
+    left:0;
+    visibility: hidden;
+}
+.moldura{
+    padding: 10px 10px 0 10px;
+}
+.alternativas{
+    text-align: left;
+}
+/*XL*/
+@media (min-width: 1200px) {
+    .navPadrao > ul > li {
+        width:17.5%;
+        float:left;
+    }
+    #itempesquisa{
+        width:30%;
+    }
+}
+/*lg*/
+@media (max-width: 1200px) {
+    .navPadrao > ul > li {
+        width:17.5%;
+        float:left;
+    }
+    #itempesquisa{
+        width:30%;
+    }
+}
+/*md*/
+@media (max-width: 768px) {
+    .navPadrao > ul > li {
+        width:17.5%;
+        float:left;
+    }
+    #itempesquisa{
+        width:30%;
+    }
+}
+/*sm*/
+@media (max-width: 768px) {
+    .navPadrao > ul > li {
+        width:17.5%;
+        float:left;
+    }
+    #itempesquisa{
+        width:30%;
+    }
+}
+/*xs*/
+@media (max-width: 576px) {
+    .navPadrao > ul > li {
+        width:100%;
+    }
+    #itempesquisa{
+        width:100%;
+    }
+}
+.container-50{
+    width: 50%;
+    margin: 0 auto;
+}
+.container-100{
+    width: 100%;
+    margin: 0 auto;
+}
+.container-80{
+    width: 80%;
+    margin: 0 auto;
+}
+.container-70{
+    width: 70%;
+    margin: 0 auto;
+}
+.container-60{
+    width: 70%;
+    margin: 0 auto;
+}
+.container-30{
+    width: 30%;
+    margin: 0 auto;
+}
+.container-40{
+    width: 30%;
+    margin: 0 auto;
+}
+.input-90{
+    width:90%;
+    font-size: 110%;
+    margin:0 auto;
+}
+.full{
+    width: 100%;
+}
+.w-900{
+    width: 900px;
+}
+.campoTexto{
+    width:100%;
+    resize:none;
+    border-radius:10px;
+    height: 125px;
+}
+.alternativa{
+    padding-top: 6px;
+}
+.alternativaCorreta{
+    background: #78ed6e;
+    
+}
+.alternativaTexto{
+    border:0;
+    min-height: 125px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.281);
+}
+.alternativaTexto:hover{
+    transition: 2ms;
+    border:1px solid rgb(185, 183, 183);
+}

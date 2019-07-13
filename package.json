@@ -1,0 +1,41 @@
+{
+  "name": "provas.med",
+  "version": "1.0.0",
+  "description": "Front",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "jquery": "^3.4.1",
+    "nodemon": "^1.19.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/server.js",
+    "dev": "nodemon ./bin/server.js"
+  },
+  "author": "Robson Mello",
+  "license": "ISC",
+  "bin": {
+    "provas.med": "server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobsonLsMello/provas.med.git"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "bugs": {
+    "url": "https://github.com/RobsonLsMello/provas.med/issues"
+  },
+  "homepage": "https://github.com/RobsonLsMello/provas.med"
+}

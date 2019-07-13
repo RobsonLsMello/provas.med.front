@@ -1,0 +1,136 @@
+<% include ../partials/head.ejs %>
+
+
+<form class="container" method="POST" action="/">
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="row semM questao" id="questao-1">
+        <h2 class="col-12">1)</h2>
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <h3>Pergunta:</h3>
+                <div class="fundoWhite moldura aDireita">
+                    <textarea name="txtTexto-1" class="campoTexto"></textarea>
+                    <label class="centralizado full" id="labelImagemQuestao-1">
+                        <div class="boxImgArquivo">
+                            <h3>Suas fotos estarão aqui</h3>
+                            <div hidden>
+                                    <button type="button" id="deletarImagem-1" class="circle bg-danger deletarImagem">X</button>
+                                    <img src="" id="imagemQuestao-1" class="imgArquivo" title="Imagem da questão 1" height="150px" />
+                            </div>                            
+                        </div>                        
+                    </label> 
+                    <label class="full labelArquivo">                    
+                        <div class="btn btn-primary btn-a bg-p full semp">
+                                Arraste uma foto ou
+                                <img class="svg" src="/img/camera.svg" title="Camêra" alt="Icone de uma camêra" width="50px"/>
+                                Clique para adicionar
+                        </div>
+                        <input type="file" name="arquivoQuestao-1" id="arquivoQuestao-1" class="inputarquivo full" accept="image/*"/>
+                    </label>
+                    <label>
+                        <button type="button" id="AdicionarTexto-1" class="adicionarTexto btn btn-primary bg-p btn-a ">Adicionar mais Texto</button>
+                    </label>
+                    <textarea id="txtTexto-1" name="txtTexto-1" class="campoTexto" hidden></textarea>
+                </div>
+            </div>
+           
+            <div class="col-md-12 ">
+                <h3>Dados da Questão:</h3>
+                <div class="fundoWhite moldura">
+                    <div class="col-12 row">
+                        <label class="col-md-6">
+                            Disciplina:
+                            <label class="label centralizado">
+                                <select name="disciplina-1" class="input-90">
+                                    <option value="0">Selecione</option>
+                                </select>
+                            </label>
+                        </label>
+                        <label class="col-md-6">
+                            Dificuldade:
+                            <label class="label centralizado">
+                                <select name="dificuldade-1" class="input-90">
+                                    <option value="0">Selecione</option>
+                                </select>
+                            </label>
+                        </label>
+                    </div>
+                    <div class="col-12 row">
+                        <label class="col-md-6">
+                            Conteúdo Especifico:
+                            <label class="label centralizado">
+                                <select name="conteudo-1" class="input-90">
+                                    <option value="0">Selecione</option>
+                                </select>
+                            </label>
+                        </label>
+                        <label class="col-md-6">
+                            Prova / Vestibular:
+                            <label class="label centralizado">
+                                <select name="prova-1" class="input-90">
+                                    <option value="0">Selecione</option>
+                                </select>
+                            </label>
+                        </label>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-12 ">
+                <h3>Alternativas:</h3>
+                <div class=" fundoWhite moldura aDireita">
+                    <textarea name="txtTextoAlternativa-1" class="campoTexto"></textarea>
+                    <label class="centralizado full" id="labelImagemQuestao-1">
+                        <div class="boxImgArquivo">
+                            <h3>Suas fotos estarão aqui</h3>
+                            <div hidden>
+                                    <button type="button" id="deletarImagemAlternativa-1" class="circle bg-danger deletarImagemAlternativa">X</button>
+                                    <img src="" id="imagemQuestaoAlternativa-1" class="imgArquivo" title="Imagem da questão 1" height="150px" />
+                            </div>                            
+                        </div>                        
+                    </label> 
+                    <label class="full labelArquivo">                    
+                        <div class="btn btn-primary btn-a bg-p full semp">
+                                Arraste uma foto ou
+                                <img class="svg" src="/img/camera.svg" title="Camêra" alt="Icone de uma camêra" width="50px"/>
+                                Clique para adicionar
+                        </div>
+                        <input type="file" name="arquivo" id="inputarquivoAlternativa-1" class="inputarquivoAlternativa full" accept="image/*"/>
+                    </label>
+                    <label class="col-12 semp">
+                        <button type="button" id="adicionarTextoAlternativa-1" class="adicionarTextoAlternativa btn btn-primary bg-p btn-a">Adicionar mais Texto</button>
+                    </label>
+                    <textarea name="txtTextoAlternativa-1" id="txtTextoAlternativa-1" class="campoTexto" hidden></textarea>
+                    <label class="col-12 semp">
+                        <button type="button" id="adicionarAlternativa-1" class="adicionarAlternativa btn btn-success btn-a ">Adicionar Alternativa</button>
+                    </label>
+                    <hr>
+                    <div class="row semM alternativa full" id="alternativa-a-1">
+                        <div class="col-sm-2">
+                            <button type="button" class="circle bg-success correta" id="a-1">V</button>
+                            <button type="button" class="circle bg-danger deletar">X</button>
+                            <button type="button" class="circle bg-primary modificar">M</button>
+                        </div>
+                        <div class="col-sm-10">
+                            <textarea name="alternativa-a-1" class="campoTexto alternativaTexto"></textarea>
+                        </div>
+                        <input class="inputInvisivel" type="radio" name="alternativa-1" value="a">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 aDireita afastamento-top-simples">
+            <button type="button" id="removerQuestão-1" class="removerQuestão btn btn-lg btn-danger"><b>x</b></button>
+            <button type="button" class="adicionarQuestão btn btn-lg btn-success"><b>+</b></button>
+            <button type="submit" class="btn btn-lg btn-primary bg-p"><b>Finalizar Prova</b></button>
+        </div>
+    </div>
+    
+</form>
+<% include ../partials/foot.ejs %>  

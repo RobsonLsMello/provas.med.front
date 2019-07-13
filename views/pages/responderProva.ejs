@@ -1,0 +1,35 @@
+<% include ../partials/head.ejs %>
+
+
+<form class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="" id="questoes">
+        <div class="row col-md-10 centralizado fundoWhite">
+            <h2>1)</h2>
+            <p class="justificado">Corpo da primeira questão, com todo o conteúdo que foi escrito, desde a primeira letra até a última, finalizando ou continuando.</p>  
+            <img src="/img/placeholder.png" class="imgArquivo" width="200px">
+            <p class="justificado">Continuação da primeira questão, com conteúdo que foi escrito, desde a primeira letra até a última, finalizando ou continuando.</p>      
+            <div class="row col-12 alternativas">
+                <label class="col-12">
+                    <p><input type="radio" name="questao-1" id="alternativa-a-1" class="alternativa" value="a"/>Alternativa A</p>
+                </label>
+                <label class="col-12">
+                    <p><input type="radio" name="questao-1" id="alternativa-b-1" class="alternativa" value="b"/>Alternativa B</p>
+                </label>
+                <label class="col-12">
+                    <p><input type="radio" name="questao-1" id="alternativa-c-1" class="alternativa" value="c"/>Alternativa C</p>
+                </label>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="fixed-bottom container aDireita">
+        <button type="submit" class="btn btn-success btn-lg">Entregar a Prova</button>
+    </div>
+</form>
+
+<% include ../partials/foot.ejs %>  

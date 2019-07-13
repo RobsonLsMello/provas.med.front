@@ -1,0 +1,84 @@
+<% include ../partials/head.ejs %>
+
+
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row col-md-12 centralizado">
+        <div class="col-md-4">
+            <div class="fundoWhite col-md-12">
+                <br>
+                <h3>Procurar Questões:</h3>
+                <form>
+                    <br>
+                    <label class="label">
+                        <input type="text" id="txtTitulo" name="titulo" class="input-90" placeholder="Digite um título"/>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="label">
+                        <input type="text" id="txtVestibular" name="vestibular" class="input-90" placeholder="Digite um Vestibular"/>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="label">
+                        <select class="input-90" id="cbbDisciplina" name="disciplina">
+                            <option value="0">Selecione uma Disciplina</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="label">
+                        <select class="input-90" id="cbbConteudo" name="conteudo">
+                            <option value="0">Selecione uma Conteúdo</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="label">
+                        <select class="input-90" id="cbbDificuldade" name="dificuldade">
+                            <option value="0">Selecione uma Dificuldade</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                </form>                    
+            </div>
+        </div>   
+        <div class="col-md-8">
+            <div class="fundoWhite col-md-12">
+                <br>
+                <div class="slider">
+                    <div class="col-md-12 lista">
+                        <div id="questao-1" class="itemLista row">
+                            <div class="col-sm-12 row">
+                                <h3>Titulo da Questão</h3>
+                            </div>
+                            <div class="col-sm-12 row">
+                                <div class="col-6 semp">
+                                    <p>Disciplina: <b>Matemática</b></p>
+                                    <p>Conteúdo: <b>Integrais</b></p>
+                                </div>
+                                <div class="col-6 semp">
+                                    <p>Dificuldade: <b>000</b></p>
+                                    <p>Vestibular: <b>000</b></p>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="col-md-12 afastamento-top-simples aDireita">
+                    <button type="button" id="criarProva" class="btn btn-success btn-crud">Criar</button>
+                </nav>
+                <br>
+            </div>
+        </div>        
+             
+    </div>
+    
+</div>
+
+<% include ../partials/modal.ejs %>  
+<% include ../partials/foot.ejs %>  

@@ -1,0 +1,175 @@
+<% include ../partials/head.ejs %>
+
+
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row col-md-12 ">
+        <div class="col-xl-5 centralizado row semp">
+            <div class="col-md-6">
+                <a href="/suasProvas" class="btn btn-m btn-m2 ">Adicionar novas Questões</a>
+            </div>
+            <div class="col-md-6" >
+                <a href="/suasProvas" class="btn btn-m btn-m2 bg-success w-900">Finalizar Prova</a>
+            </div>
+            
+        </div>
+        <div class="col-xl-7 centralizado">
+            <div class="fundoWhite col-md-12">
+                <h3>Dados da Prova:</h3>
+                <label class="label">
+                    <input type="text" id="txtNome" name="nome" class="input-90" placeholder="Nome da Universidade ou Organização"/>
+                </label>
+                <label class="label">
+                    <input type="number" id="nbmAno" name="ano" class="input-90" placeholder="Ano de Publicação"/>
+                </label>
+                <label class="label">
+                    <input type="number" id="nbmSemestre" name="semestre" class="input-90" placeholder="Semestre de Publicação"/>
+                </label>
+                <label class="label">
+                    <input type="text" id="txtBanca" name="banca" class="input-90" placeholder="Nome da Banca Organizadora"/>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row col-md-12  afastamento-top-simples">
+        <div class="col-md-12">
+            <div class="fundoWhite col-md-12 centralizado">
+                <h3>Matérial Extra:</h3>
+                <button type="button" id="criarProva" class="btn btn-primary btn-crud full bg-p">
+                    <h4>Arraste ou Clique</h4>
+                    <p>Formatos: txt, png, pdf</p>
+                </button>
+                <br>
+                <br>
+                <div class="slider">
+                    <div class="col-md-12 lista listaArquivo" height="200px">
+                        <div id="Arquivo-1" class="itemLista row">
+                            <div class="col-md-6">
+                                <h3>Nome do Arquivo.txt</h3>
+                                <p>30kb</p>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="circle bg-danger" value="1" width="20">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="row col-md-12 afastamento-top-simples">
+        <div class="col-lg-4 centralizado">
+            <div class="fundoWhite col-md-12">
+                <br>
+                <h3>Procurar Questões:</h3>
+                <form>
+                    <br>
+                    <label class="label">
+                        <input type="text" id="txtTitulo" name="titulo" class="input-90" placeholder="Digite um título"/>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="label">
+                        <input type="text" id="txtVestibular" name="vestibular" class="input-90" placeholder="Digite um Vestibular"/>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="label">
+                        <select class="input-90" id="cbbDisciplina" name="disciplina">
+                            <option value="0">Selecione uma Disciplina</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="label">
+                        <select class="input-90" id="cbbConteudo" name="conteudo">
+                            <option value="0">Selecione uma Conteúdo</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="label">
+                        <select class="input-90" id="cbbDificuldade" name="dificuldade">
+                            <option value="0">Selecione uma Dificuldade</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                </form>                    
+            </div>
+        </div>   
+        <div class="col-lg-8 row centralizado semp">
+            <div class="col-md-6">
+                <div class="fundoWhite col-md-12">
+                    <br>
+                    <h3>Banco de Questões</h3>
+                    <div class="slider">
+                        <div class="col-md-12 lista">
+                            <div id="questao-1" class="itemLista row">
+                                <div class="col-sm-12 row">
+                                    <h3>Titulo da Questão</h3>
+                                </div>
+                                <div class="col-sm-12 row">
+                                    <div class="col-6 semp">
+                                        <p>Disciplina: <b>Matemática</b></p>
+                                        <p>Conteúdo: <b>Integrais</b></p>
+                                    </div>
+                                    <div class="col-6 semp">
+                                        <p>Dificuldade: <b>000</b></p>
+                                        <p>Vestibular: <b>000</b></p>
+                                    </div>
+                                    <div class="col-md-12 centralizado">
+                                        <button class="circle bg-success" value="1" width="20">+</button>
+                                    </div>            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="col-md-12 afastamento-top-simples aDireita">
+                        <button type="button" id="criarProva" class="btn btn-success btn-crud">Criar</button>
+                    </nav>
+                    <br>
+                </div>
+            </div>      
+            <div class="col-md-6">
+                
+                <div class="fundoWhite col-md-12">
+                    <br>
+                    <h3>Questões Atuais</h3>
+                    <div class="slider">
+                        <div class="col-md-12 lista">
+                            <div id="questao-1" class="itemLista row">
+                                <div class="col-sm-12 row">
+                                    <h3>Titulo da Questão</h3>
+                                </div>
+                                <div class="col-sm-12 row">
+                                    <div class="col-6 semp">
+                                        <p>Disciplina: <b>Matemática</b></p>
+                                        <p>Conteúdo: <b>Integrais</b></p>
+                                    </div>
+                                    <div class="col-6 semp">
+                                        <p>Dificuldade: <b>000</b></p>
+                                        <p>Vestibular: <b>000</b></p>
+                                    </div>   
+                                    <div class="col-md-12 centralizado">
+                                        <button class="circle bg-danger" value="1" width="20">X</button>
+                                    </div>          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>    
+        </div>
+          
+    </div>
+    
+</div>
+
+<% include ../partials/modal.ejs %>  
+<% include ../partials/foot.ejs %>  

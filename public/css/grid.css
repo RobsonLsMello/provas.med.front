@@ -1,0 +1,39 @@
+/*xl*/
+@media (min-width: 1200px) {
+.xl-20{width:100%;float:left;}
+.xl-10{width:50%;float:left;}
+.xl-6-67{width:33.33333%;float:left;}
+.xl-5{width:25%;float:left;}
+.xl-4{width:20%;float:left;}
+.xl-3-33 d{width:16.66667%;float:left;}
+.xl-7{width:14.28571%;float:left;}
+.xl-8{width:12.5%;float:left;}
+.xl-9{width:11.11111%;float:left;}
+.xl-10{width:10%;float:left;}
+.xl-11{width:9.090909%;float:left;}
+.xl-12{width:8.333333%;float:left;}
+.xl-13{width:7.692308%;float:left;}
+.xl-14{width:7.142857%;float:left;}
+.xl-15{width:6.666667%;float:left;}
+.xl-16{width:6.25%;float:left;}
+.xl-17{width:5.882353%;float:left;}
+.xl-18{width:5.555556%;float:left;}
+.xl-19{width:5.263158%;float:left;}
+.xl-20{width:5%;float:left;}
+}
+/*lg*/
+@media (max-width: 1200px) {
+
+}
+/*md*/
+@media (max-width: 768px) {
+
+}
+/*sm*/
+@media (max-width: 768px) {
+
+}
+/*xs*/
+@media (max-width: 576px) {
+
+}

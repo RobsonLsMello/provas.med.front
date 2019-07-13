@@ -1,0 +1,49 @@
+<% include ../partials/head.ejs %>
+
+
+<div class="fundoDegrade">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container container-50">
+        <div class=" centralizado">
+            <div class="logo">
+                <img src="/img/search.svg" title="Prova.med" alt="Logo do site"/>
+                <h2 class="h1 logoTitulo">Provas.med</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="/" method="POST" class="container-50">
+                <label class="col-md-12 label ">
+                    <input type="email" class="input-90" name="email" placeholder="Email"/>
+                </label>
+                <br>
+                <br>
+                <label class="col-md-12 label">
+                    <input type="password" class="input-90" name="senha" placeholder="Senha"/>
+                </label>
+                <br>
+                <br>
+                <label class="container-100 check">
+                    <input type="checkbox" value="1" name="logar"/>
+                    Continuar logado
+                </label>
+                <br>
+                <br>
+                <button type="submit" name="enter" class="btn btn-padrao container-50">Entrar</button>
+                <br>
+                <br>
+                <br>
+                <div class="container-100 subSubSubTitulo">
+                    Não é cadastrado? <a href="/cadastro" class="subSubTitulo-white">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<% include ../partials/foot.ejs %>  

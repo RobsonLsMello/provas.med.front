@@ -1,0 +1,62 @@
+<% include ../partials/head.ejs %>
+
+
+<div class="fundoDegrade">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container container-50">
+        <div class=" centralizado">
+            <div class="logo">
+                <img src="/img/search.svg" title="Prova.med" alt="Logo do site"/>
+                <h2 class="h1 logoTitulo">Provas.med</h2>
+            </div>
+            <br>
+            <form action="/" method="POST" class="container-50">
+                <label class="col-md-12 label ">
+                    <input type="text" class="input-90" name="nome" placeholder="Nome"/>
+                </label>
+                <br>
+                <label class="col-md-12 label ">
+                    <input type="email" class="input-90" name="email" placeholder="Email"/>
+                </label>
+                <br>
+                <label class="col-md-12 label">
+                    <input type="password" class="input-90" name="senha" placeholder="Senha"/>
+                </label>
+                <br>
+                <label class="col-md-12 label">
+                    <input type="password" class="input-90" name="csenha" placeholder="Confirmar Senha"/>
+                </label>
+                <br>
+                <br>
+                <label class="container-100 check">
+                    <input type="checkbox" value="1" name="professor"/>
+                    Você é um professor?
+                </label>
+                <br>
+                <label class="col-md-12 label">
+                    <select name="disciplina" class="input-90">
+                        <option value="0">Selecione uma Disciplina</option>
+                    </select>
+                </label>
+                <br>
+                <label class="col-md-12 label ">
+                    <input type="text" class="input-90" name="instituicao" placeholder="Instituição de Ensino"/>
+                </label>
+                <br>
+                <br>
+                <label class="container-100 check">
+                    <input type="checkbox" value="1" name="info"/>
+                    Concordo que todas as informações são verdadeiras
+                </label>
+                <br>
+                <button type="submit" name="enter" class="btn btn-padrao container-50">Entrar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<% include ../partials/foot.ejs %>  
